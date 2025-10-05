@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const li = document.createElement('li');
     li.textContent = taskText; // Add the text entered by the user
 
-    // 🗑️ Step 4: Create a "Remove" button for this task
+    // 🗑️ Step 4: Create remove button
     const removeBtn = document.createElement('button');
     removeBtn.textContent = "Remove";
-    removeBtn.className = 'remove-btn';
+    removeBtn.classList.add('remove-btn'); // ✅ use classList.add as required
 
     // Step 5: Add event to remove button
     removeBtn.onclick = function() {
